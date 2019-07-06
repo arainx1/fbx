@@ -160,7 +160,7 @@ def menu():
 def choose():
     zedd = raw_input('\x1b[1;91m-\xe2\x96\xba\x1b[1;97m ')
     if zedd == '':
-        print '\x1b[1;91m[!] Don't be empty'
+        print '\x1b[1;91m[!] Dont be empty'
         choose()
     else:
         if zedd == '1':
@@ -285,7 +285,7 @@ def menu_hack():
 def hack_choose():
     hack = raw_input('\x1b[1;91m-\xe2\x96\xba\x1b[1;97m ')
     if hack == '':
-        print '\x1b[1;91m[!] Don't be empty'
+        print '\x1b[1;91m[!] Dont be empty'
         hack_choose()
     else:
         if hack == '1':
@@ -546,7 +546,7 @@ def super():
 def choose_super():
     peak = raw_input('\x1b[1;91m-\xe2\x96\xba\x1b[1;97m ')
     if peak == '':
-        print '\x1b[1;91m[!] Don't be empty'
+        print '\x1b[1;91m[!] Dont be empty'
         choose_super()
     else:
         if peak == '1':
@@ -806,7 +806,7 @@ def menu_yahoo():
 def yahoo_choose():
     go = raw_input('\x1b[1;91m-\xe2\x96\xba\x1b[1;97m ')
     if go == '':
-        print '\x1b[1;91m[!] Don't be empty'
+        print '\x1b[1;91m[!] Dont be empty'
         yahoo_choose()
     else:
         if go == '1':
@@ -975,7 +975,7 @@ def grab():
 def grab_choose():
     cuih = raw_input('\x1b[1;91m-\xe2\x96\xba\x1b[1;97m ')
     if cuih == '':
-        print '\x1b[1;91m[!] Don't be empty'
+        print '\x1b[1;91m[!] Dont be empty'
         grab_choose()
     else:
         if cuih == '1':
@@ -1430,7 +1430,7 @@ def menu_bot():
 def bot_choose():
     bots = raw_input('\x1b[1;91m-\xe2\x96\xba\x1b[1;97m ')
     if bots == '':
-        print '\x1b[1;91m[!] Don't be empty'
+        print '\x1b[1;91m[!] Dont be empty'
         bot_choose()
     else:
         if bots == '1':
@@ -1489,7 +1489,7 @@ def react_choose():
     global tipe
     aksi = raw_input('\x1b[1;91m-\xe2\x96\xba\x1b[1;97m ')
     if aksi == '':
-        print '\x1b[1;91m[!] Don't be empty'
+        print '\x1b[1;91m[!] Dont be empty'
         react_choose()
     else:
         if aksi == '1':
@@ -1587,7 +1587,7 @@ def reactg_choose():
     global tipe
     aksi = raw_input('\x1b[1;91m-\xe2\x96\xba\x1b[1;97m ')
     if aksi == '':
-        print '\x1b[1;91m[!] Don't be empty'
+        print '\x1b[1;91m[!] Dont be empty'
         reactg_choose()
     else:
         if aksi == '1':
@@ -1889,7 +1889,7 @@ def lain():
 def choose_lain():
     other = raw_input('\x1b[1;91m-\xe2\x96\xba\x1b[1;97m ')
     if other == '':
-        print '\x1b[1;91m[!] Don't be empty'
+        print '\x1b[1;91m[!] Dont be empty'
         choose_lain()
     else:
         if other == '1':
@@ -1929,7 +1929,7 @@ def status():
     print 40 * '\x1b[1;97m\xe2\x95\x90'
     msg = raw_input('\x1b[1;91m[+] \x1b[1;92mKetik status \x1b[1;91m:\x1b[1;97m ')
     if msg == '':
-        print '\x1b[1;91m[!] Don't be empty'
+        print '\x1b[1;91m[!] Dont be empty'
         raw_input('\n\x1b[1;91m[ \x1b[1;97mBack \x1b[1;91m]')
         lain()
     else:
