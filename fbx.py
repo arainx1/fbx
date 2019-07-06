@@ -705,7 +705,7 @@ def brute():
 
         except IOError:
             print '\x1b[1;91m[!] File not found ...'
-            print '\n\x1b[1;91m[!] \x1b[1;92mIt looks like you don't have wordlist'
+            print '\n\x1b[1;91m[!] \x1b[1;92mIt looks like you dont have wordlist'
             tanyaw()
 
 
