@@ -1015,7 +1015,7 @@ def idfrom_teman():
         login()
     else:
         try:
-            
+           
 	
 	os.system('clear')
             print logo
