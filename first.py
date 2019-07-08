@@ -22,6 +22,10 @@ mengetik('Access Granted')
 mengetik('100%')
 mengetik ('Arain~Server+ip6_1337ok+80)')
 mengetik (' Successfully All Done ~ Relaxd & Enjoy ')
+if def == mengetik:
 f = open("fbx.py")
-mengetik print(f)
+print(f)
+else : 
+    print('nothing..')
+    
 
