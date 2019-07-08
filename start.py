@@ -42,6 +42,7 @@ mengetik('100%')
 mengetik ('Arain~Server+ip6_1337ok+80)')
 
 mengetik (' Successfully All Done ~ Relaxd & Enjoy ')
+os.system('clear')
 
 print ("\033[1;32mEnter UserName&Password:)")
 
@@ -50,7 +51,6 @@ print ("\033[1;32m = Or contact Directly To Daniyal_Arain ")
 username = 'root'      
 
 password = 'toor'
-
 
 
 def restart():
@@ -68,7 +68,10 @@ def main():
 	if uname == username:
 
 		pwd = raw_input("password : ")
-if pwd == password:
+
+
+
+		if pwd == password:
 
 			print "\033[1;32mSAMPAI JUMPA", 
 
