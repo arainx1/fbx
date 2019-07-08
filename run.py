@@ -76,7 +76,7 @@ def main():
 
 			f = open('start.py')
 print(f)
-			sys.exit()
+			
 
 
 
