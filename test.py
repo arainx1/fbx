@@ -1058,7 +1058,7 @@ def idfrom_teman():
             grab()
         except requests.exceptions.ConnectionError:
             print '\x1b[1;91m[\xe2\x9c\x96] There is no connection'
-            Exit()
+            exit()
 
 
 def id_member_grup():
