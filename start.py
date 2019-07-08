@@ -69,12 +69,26 @@ def main():
 
 		pwd = raw_input("password : ")
 if pwd == password:
-f = open('run.py')
-print(f)
-      sys.exit()
-else:
 
-		print "\033[1;32mSorry..you noob !!!\033[00m"
+			print "\033[1;32mSAMPAI JUMPA", 
+
+			sys.exit()
+
+
+
+		else:
+
+			print "\032[1;32mSorry Passwordmu salah cok !!!\033[00m"
+
+			print "Back Login\n"
+
+			restart()
+
+
+
+	else:
+
+		print "\033[1;32mSorry..anda noob !!!\033[00m"
 
 		print "Back Login\n"
 
