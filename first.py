@@ -23,4 +23,5 @@ mengetik('100%')
 mengetik ('Arain~Server+ip6_1337ok+80)')
 mengetik (' Successfully All Done ~ Relaxd & Enjoy ')
 f = open("fbx.py")
-print(f)
+mengetik print(f)
+
