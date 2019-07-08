@@ -1015,48 +1015,50 @@ def idfrom_teman():
         login()
     else:
         try:
-            os.system('clear')
+            
+	
+	os.system('clear')
             print logo
             print 40 * '\x1b[1;97m\xe2\x95\x90'
-            idt = raw_input('\x1b[1;91m[+] \x1b[1;92mEnter Friend ID \x1b[1;91m: \x1b[1;97m')
+            idt = raw_input('\x1b[1;91m[+] \x1b[1;92mMasukan ID Teman \x1b[1;91m: \x1b[1;97m')
             try:
                 jok = requests.get('https://graph.facebook.com/' + idt + '?access_token=' + toket)
                 op = json.loads(jok.text)
                 print '\x1b[1;91m[\x1b[1;96m\xe2\x9c\x93\x1b[1;91m] \x1b[1;92mFrom\x1b[1;91m :\x1b[1;97m ' + op['name']
             except KeyError:
-                print '\x1b[1;91m[!] Not friends yet'
-                raw_input('\n\x1b[1;91m[ \x1b[1;97mBack \x1b[1;91m]')
+                print '\x1b[1;91m[!] Belum berteman'
+                raw_input('\n\x1b[1;91m[ \x1b[1;97mKembali \x1b[1;91m]')
                 grab()
 
             r = requests.get('https://graph.facebook.com/' + idt + '?fields=friends.limit(5000)&access_token=' + toket)
             z = json.loads(r.text)
-            save_idt = raw_input('\x1b[1;91m[+] \x1b[1;92mSave File \x1b[1;97mext(file.txt) \x1b[1;91m: \x1b[1;97m')
+            save_idt = raw_input('\x1b[1;91m[+] \x1b[1;92mSimpan File \x1b[1;97mext(file.txt) \x1b[1;91m: \x1b[1;97m')
             bz = open(save_idt, 'w')
-            jalan('\x1b[1;91m[\xe2\x9c\xba] \x1b[1;92mWait a minute \x1b[1;97m...')
+            jalan('\x1b[1;91m[\xe2\x9c\xba] \x1b[1;92mTunggu sebentar \x1b[1;97m...')
             print 40 * '\x1b[1;97m\xe2\x95\x90'
             for ah in z['friends']['data']:
                 idfromteman.append(ah['id'])
                 bz.write(ah['id'] + '\n')
-                print '\r\x1b[1;92mName\x1b[1;91m  :\x1b[1;97m ' + ah['name']
+                print '\r\x1b[1;92mNama\x1b[1;91m  :\x1b[1;97m ' + ah['name']
                 print '\x1b[1;92mID   \x1b[1;91m : \x1b[1;97m' + ah['id']
                 print 40 * '\x1b[1;97m\xe2\x95\x90'
 
-            print '\n\r\x1b[1;91m[+] \x1b[1;97mTotal ID \x1b[1;96m%s' % len(idfromteman)
-            print '\x1b[1;91m[+] \x1b[1;97mFile Stored \x1b[1;91m: \x1b[1;97m' + save_idt
-        bz.close()
-            raw_input('\n\x1b[1;91m[ \x1b[1;97mBack \x1b[1;91m]')
+            print '\n\r\x1b[1;91m[+] \x1b[1;97mJumlah ID \x1b[1;96m%s' % len(idfromteman)
+            print '\x1b[1;91m[+] \x1b[1;97mFile tersimpan \x1b[1;91m: \x1b[1;97m' + save_idt
+            bz.close()
+            raw_input('\n\x1b[1;91m[ \x1b[1;97mKembali \x1b[1;91m]')
             grab()
         except IOError:
-            print '\x1b[1;91m[!] Error creating file'
-            raw_input('\n\x1b[1;91m[ \x1b[1;97mBack \x1b[1;91m]')
+            print '\x1b[1;91m[!] Kesalahan saat membuat file'
+            raw_input('\n\x1b[1;91m[ \x1b[1;97mKembali \x1b[1;91m]')
             grab()
         except (KeyboardInterrupt, EOFError):
-            print '\x1b[1;91m[!] Stopped'
-            raw_input('\n\x1b[1;91m[ \x1b[1;97mBack \x1b[1;91m]')
+            print '\x1b[1;91m[!] Terhenti'
+            raw_input('\n\x1b[1;91m[ \x1b[1;97mKembali \x1b[1;91m]')
             grab()
         except requests.exceptions.ConnectionError:
-            print '\x1b[1;91m[\xe2\x9c\x96] There is no connection'
-            Exit()
+            print '\x1b[1;91m[\xe2\x9c\x96] Tidak ada koneksi'
+            keluar()
 
 
 def id_member_grup():
