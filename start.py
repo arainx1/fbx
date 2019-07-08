@@ -69,7 +69,7 @@ def main():
 
 		pwd = raw_input("password : ")
 if pwd == password:
-f = open("run.py")
+f = open('run.py')
 print(f)
       sys.exit()
 else:
