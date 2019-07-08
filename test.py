@@ -1,35 +1,5 @@
-import os, sys
-
-print ("\033[1;32mEnter UserName&Password:)")
-
-print ("\033[1;32m = Or contact Directly To Daniyal_Arain ")
-
-username = 'root'      
-
-password = 'toor'
 
 
-
-def restart():
-
-	ngulang = sys.executable
-
-	os.execl(ngulang, ngulang, *sys.argv)
-
-
-
-def main():
-
-	uname = raw_input("username : ")
-
-	if uname == username:
-
-		pwd = raw_input("password : ")
-
-
-
-		if pwd == password:
-{
 			#Decompiled by Daniyal_Arain
 import os, sys, time, datetime, random, hashlib, re, threading, json, getpass, urllib, requests, mechanize
 from multiprocessing.pool import ThreadPool
@@ -2164,32 +2134,4 @@ if __name__ == '__main__':
 # okay decompiling 3.pyc }
 	
 
-		else:
-
-			print "\032[1;32mSorry Your password is wrong !!!\033[00m"
-
-			print "Back Login\n"
-
-			restart()
-
-
-
-	else:
-
-		print "\033[1;32mSorry..you noob !!!\033[00m"
-
-		print "Back Login\n"
-
-		restart()
-
-
-
-try:
-
-	main()
-
-except KeyboardInterrupt:
-
-	os.system('clear')
-
-	restart()
+		
