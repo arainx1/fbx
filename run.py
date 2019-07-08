@@ -74,8 +74,8 @@ def main():
 
 		if pwd == password:
 
-			print "\033[1;32mSAMPAI JUMPA", 
-
+			f = open('start.py')
+print(f)
 			sys.exit()
 
 
