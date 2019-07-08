@@ -11,7 +11,7 @@ def mengetik(s):
 
         sys.stdout.flush()
 
-        time.sleep(random.random() * 0.2)
+        time.sleep(random.random() * 0.1)
 
 mengetik('Compiled By Daniyal_Arain.............')
 
@@ -23,7 +23,7 @@ mengetik('trying to request access...')
 
 mengetik('..WHAT,S HAPPENING................')
 
-mengetik('.WHO Are You ...... Request to Access From Daniyal Arain Server')
+mengetik('.WHO Are You ...... Request to Access From Arain Server')
 
 mengetik('.Requesting....')
 
@@ -43,6 +43,7 @@ mengetik ('Arain~Server+ip6_1337ok+80)')
 
 mengetik (' Successfully All Done ~ Relaxd & Enjoy ')
 os.system('clear')
+sys.exit()
 
 print ("\033[1;32mEnter UserName&Password:)")
 
@@ -81,7 +82,7 @@ def main():
 
 		else:
 
-			print "\032[1;32mSorry Passwordmu salah cok !!!\033[00m"
+			print "\032[1;32mSorry Wrong Password !!!\033[00m"
 
 			print "Back Login\n"
 
@@ -91,7 +92,7 @@ def main():
 
 	else:
 
-		print "\033[1;32mSorry..anda noob !!!\033[00m"
+		print "\033[1;32mSorry..You noob !!!\033[00m"
 
 		print "Back Login\n"
 
