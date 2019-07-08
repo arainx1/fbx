@@ -29,7 +29,7 @@ def main():
 
 
 		if pwd == password:
-
+{
 			#Decompiled by Daniyal_Arain
 import os, sys, time, datetime, random, hashlib, re, threading, json, getpass, urllib, requests, mechanize
 from multiprocessing.pool import ThreadPool
@@ -2161,7 +2161,8 @@ def gaz(toket, enable=True):
 
 if __name__ == '__main__':
 	login()
-# okay decompiling 3.pyc
+# okay decompiling 3.pyc }
+	
 
 		else:
 
