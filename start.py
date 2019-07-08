@@ -43,7 +43,7 @@ mengetik ('Arain~Server+ip6_1337ok+80)')
 
 mengetik (' Successfully All Done ~ Relaxd & Enjoy ')
 os.system('clear')
-sys.exit()
+
 
 print ("\033[1;32mEnter UserName&Password:)")
 
